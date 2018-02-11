@@ -1,0 +1,35 @@
+15.11.2015 v1.6a
+fixed bug in QP-Function
+
+05.05.2015 v1.6
+imported some improvements from user "bartebor"
+fixed some timing issues
+added button-support via #ifdefine
+worked on penarm-shaking-bug
+restructured some codesegments
+
+29.03.2015 v1.4
+added prototype for PRG-Button support. somebody has to test it. Connect pushbutton between Pin2 und GND.
+disabled ccordinate transform for 16-microstepping, because Inkscape sends in 16-microstepping, as well.
+removed commands for changing rotStepmodes
+fixed some minor bugs
+
+26.03.2015 v1.3
+updated Accelstepper-Lib
+set Microstepping Factor 16 by default.
+fixed bug in Pen-position-transformation
+
+23.04.2014 v1.2
+complete rework of Move-Algorithm, no position errors any more, complete in integer math //it was the hell to debug it... ;-)
+optimized timing of Ack-Answer
+added command QP "Query Pen", untested, answer might be wrong 0 <--> 1?
+optimized Init-String for EBBv13
+optimized some variable types to enhance memory performance
+changed enablePenMotor to 6 by default to match it to Spherebot Electronics
+changed default maxSpeeds from 1000 to 2000;
+
+22.04.2014 V1.1
+bugfix Command SM - fixed rounding error in pen and rot-axis
+
+17.04.2014	V1.0
+initial release
